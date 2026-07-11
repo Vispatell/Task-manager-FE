@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* Modal centering and responsive fixes */
+[data-scope="dialog"][data-part="positioner"] {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 1400 !important;
+  overflow-y: auto !important;
+  padding: 1rem !important;
+}
+
+[data-scope="dialog"][data-part="content"] {
+  margin: auto !important;
+  max-height: calc(100vh - 2rem) !important;
+  overflow-y: auto !important;
+}
+
+/* Ensure backdrop covers entire screen */
+[data-scope="dialog"][data-part="backdrop"] {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 1300 !important;
+}
+
+/* Responsive modal width */
+@media (max-width: 640px) {
+  [data-scope="dialog"][data-part="content"] {
+    width: calc(100vw - 2rem) !important;
+    max-width: 100% !important;
+  }
+}

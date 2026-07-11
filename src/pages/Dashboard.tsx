@@ -19,7 +19,7 @@ import {
   NativeSelectField,
   NativeSelectRoot,
 } from '../components/ui/native-select'
-import { FaPlus, FaEye, FaEdit, FaTrash, FaSearch } from 'react-icons/fa'
+import { FaPlus, FaEye, FaEdit, FaTrash } from 'react-icons/fa'
 import { useAuth } from '../contexts/AuthContext'
 import { taskService } from '../services/task.service'
 import { toaster } from '../components/ui/toaster'

@@ -1,4 +1,4 @@
-import { NativeSelect as ChakraSelect, Portal } from "@chakra-ui/react"
+import { NativeSelect as ChakraSelect } from "@chakra-ui/react"
 import { forwardRef } from "react"
 import { LuChevronDown } from "react-icons/lu"
 

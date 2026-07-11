@@ -38,9 +38,9 @@ export default function NotFound() {
               size="lg"
               colorScheme="purple"
               onClick={() => navigate('/')}
-              leftIcon={<FaHome />}
             >
-              Go to Dashboard
+              <FaHome />
+              <Text ml={2}>Go to Dashboard</Text>
             </Button>
             <Button
               size="md"

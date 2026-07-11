@@ -31,7 +31,6 @@ export default function Register() {
     register,
     handleSubmit,
     formState: { errors, isSubmitting, isSubmitted },
-    reset,
   } = useForm<RegisterFormData>({
     resolver: zodResolver(registerSchema),
     mode: 'onSubmit',

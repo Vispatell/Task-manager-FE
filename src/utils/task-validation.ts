@@ -7,7 +7,7 @@ export const taskSchema = z.object({
     .max(100, 'Title must be less than 100 characters'),
   description: z.string().optional(),
   status: z.enum([TaskStatus.TODO, TaskStatus.IN_PROGRESS, TaskStatus.COMPLETED], {
-    required_error: 'Status is required',
+    message: 'Status is required',
   }),
   dueDate: z.string().min(1, 'Due date is required'),
 })

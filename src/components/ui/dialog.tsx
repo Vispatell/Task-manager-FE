@@ -1,7 +1,6 @@
 "use client"
 
-import type { ButtonProps } from "@chakra-ui/react"
-import { Dialog as ChakraDialog, IconButton, Portal } from "@chakra-ui/react"
+import { Dialog as ChakraDialog, Portal } from "@chakra-ui/react"
 import { CloseButton } from "./close-button"
 import { forwardRef } from "react"
 
@@ -51,9 +50,7 @@ export const DialogCloseTrigger = forwardRef<
       {...props}
       asChild
     >
-      <CloseButton size="sm" ref={ref}>
-        {props.children}
-      </CloseButton>
+      <CloseButton size="sm" ref={ref} />
     </ChakraDialog.CloseTrigger>
   )
 })
